@@ -11,6 +11,8 @@ function App() {
   const [countTrue, setCountTrue] = useState(0)
   const [countFalse, setCountFalse] = useState(0)
 
+      // alert("Double click on your chosen answer")
+
   function submit(e){
     if(e.target.className == "btn"){
       e.target.parentElement.parentElement.style.display = "none"
@@ -29,7 +31,7 @@ function App() {
   return (
     <div ref={contRef} className="App">
       {test.map((item)=>(
-      <div ref={parentRef} key={item.id} onClick={submit} className="card">
+      <div ref={parentRef} key={item.id} onDoubleClick={submit} className="card">
         <h2>{item.test}</h2>
         <div className="btn-group">
           <button className='btn' ref={btnRef} data-type={item.A.type}>{item.A.answer}</button>

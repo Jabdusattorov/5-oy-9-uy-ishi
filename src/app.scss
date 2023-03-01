@@ -24,7 +24,8 @@
             background: linear-gradient(#063b85 ,#2180a6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-
+            width: 80%;
+            text-align: center;
         }
         .btn-group{
             display: flex;
@@ -44,16 +45,17 @@
                 &:hover{
                     background: linear-gradient(#614385,#516395);
                     border-color: transparent;
+                    transform: scale(1.1);
+                }
+                &:active{
+                    background: linear-gradient(#808080,#3fada8);
                 }
             }
         }
     }
-    .none{
-        display: none !important;
-    }
     .empty{
         color: white;
-        text-align: center;
+        text-align: center !important;
         width: 400px;
         height: 130px;
         margin: 20% auto;
@@ -69,5 +71,22 @@
             }
         }
         display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .App{
+        .card{
+            h2{
+                font-size: xx-large;
+            }
+            .btn-group{
+                min-width: 60%;
+                .btn{
+                    font-size: medium;
+                    padding: 10px;
+                }
+            }
+        }
     }
 }

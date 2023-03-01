@@ -1,7 +1,7 @@
 const test = [
     {
         id:1,
-        test: "What kapital city in uzbekistan",
+        test: "The capital of Uzbekistan",
         A: {
             answer: "Andijan",
             type: false
@@ -19,7 +19,7 @@ const test = [
         id:2,
         test: "What color the sky",
         A: {
-            answer: "Blue",
+            answer: "Skyblue",
             type: true
         },
         B: {
@@ -33,7 +33,7 @@ const test = [
     },
     {
         id:3,
-        test: "Which car more expensive than this all car",
+        test: "Which car more expensive than this all car. It's not Bugatti",
         A: {
             answer: "LaFerrari",
             type: false
